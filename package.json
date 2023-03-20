@@ -5,9 +5,9 @@
   "author": "Victor Kasap <kasap.victor@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "browser-sync start --server --files '*.html, assets/**/*'",
-    "pretty": "npx prettier --write \"assets/{css,js}/**/*.{css,js}\" \"*.html\"",
-    "autoprefixer": "postcss -u autoprefixer -r src/**/*.css",
+    "serve": "browser-sync start --server --files '*.html, ./**/*'",
+    "pretty": "npx prettier --write \"./{css,js}/**/*.{css,js}\" \"*.html\"",
+    "autoprefixer": "postcss -u autoprefixer -r ./**/*.css",
     "format": "npm run pretty && npm run autoprefixer"
   },
   "devDependencies": {
@@ -20,5 +20,9 @@
   "browserslist": [
     "last 2 versions",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "mdb-ui-kit": "^6.2.0",
+    "normalize.css": "^8.0.1"
+  }
 }
