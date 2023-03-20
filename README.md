@@ -6,5 +6,5 @@
 ## #2 Start
 `make serve` or `npm serve` or `yarn serve`
 
-## #3 Format (pretty) 
+## #3 Format (prettier + autoprefixer) 
 `make format` or `npm format` or `yarn format`

@@ -20,8 +20,10 @@ else
 	browser-sync start --server --files="**/*" --port $(PORT)
 endif
 
-format: ## Formats code in assets/css, assets/js, and HTML files using Prettier
-	npx prettier --write "assets/{css,js}/**/*.{css,js}" "*.html"
-
 autoprefixer: ## Autoprefixer: Process the CSS file and add vendor prefixes for cross-browser support.
 	find assets/css -type f -iname "*.css" -exec ./node_modules/.bin/postcss -r {} \;
+
+pretty: ## Formats code in assets/css, assets/js, and HTML files using Prettier
+	npx prettier --write "assets/{css,js}/**/*.{css,js}" "*.html"
+
+format: pretty autoprefixer ## Prettier -> Autoprefixer

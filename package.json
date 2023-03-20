@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "serve": "browser-sync start --server --files '*.html, assets/**/*'",
-    "format": "npx prettier --write \"assets/{css,js}/**/*.{css,js}\" \"*.html\"",
-    "autoprefixer": "postcss -u autoprefixer -r src/**/*.css"
+    "pretty": "npx prettier --write \"assets/{css,js}/**/*.{css,js}\" \"*.html\"",
+    "autoprefixer": "postcss -u autoprefixer -r src/**/*.css",
+    "format": "npm run pretty && npm run autoprefixer"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
