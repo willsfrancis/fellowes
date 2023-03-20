@@ -1,0 +1,15 @@
+{
+  "name": "db-fellowesbrands",
+  "version": "1.0.0",
+  "repository": "git@github.com:DigitalButlersOrganization/DB-fellowesbrands.git",
+  "author": "Victor Kasap <kasap.victor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "browser-sync start --server --files '*.html, assets/**/*'",
+    "format": "npx prettier --write \"assets/{css,js}/**/*.{css,js}\" \"*.html\""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.0",
+    "prettier": "^2.8.5"
+  }
+}
