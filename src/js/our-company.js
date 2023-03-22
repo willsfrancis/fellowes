@@ -1,5 +1,4 @@
-@import 'normalize.css';
-@import 'mdb-ui-kit/css/mdb.min.css';
+import * as mdb from 'mdb-ui-kit';
 
 /******* Header *******/
 
