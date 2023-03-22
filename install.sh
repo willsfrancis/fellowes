@@ -2,13 +2,9 @@
 
 if [ -f "package.json" ]; then
   if command -v yarn > /dev/null 2>&1; then
-    if yarn help ci > /dev/null 2>&1; then
-      yarn ci
-    else
-      yarn install
-    fi
+    yarn install
   elif command -v npm > /dev/null 2>&1; then
-    npm ci
+    npm install
   else
     echo "Neither yarn nor npm is installed."
     exit 1

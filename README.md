@@ -1,20 +1,23 @@
 # DB-Fellowesbrands
 
-> #### &#x2757; Windows Makefile
-> To run a Makefile in the terminal on Windows, 
-you need to install the GNU Make utility.
-<br/> You can download the GNU Make installer for Windows 
-from the official website at https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download
-<br/> After downloading and installing GNU Make, 
-you can open a terminal (such as Command Prompt or PowerShell), 
-navigate to the directory containing the Makefile, and run the 
-`make` command.
+> Node >= 16.0.0
 
 ## #1 Install
-`make install` or `'npm install/ci'` or `'yarn install/ci'`
+  Make `make install` <br/> 
+  Npm `npm install` <br/>
+  Yarn `yarn install`
 
 ## #2 Start
-`make serve` or `npm serve` or `yarn serve`
+  Make `make serve` <br/>
+  Npm `npm serve` <br/>
+  Yarn `yarn serve`
 
 ## #3 Format (prettier + autoprefixer) 
-`make format` or `npm format` or `yarn format`
+Make `make format` <br/>
+Npm `make format` <br/>
+Yarn `yarn format`
+
+### Troubles
+> BrowserSync
+
+`npm install -g browser-sync` or `yarn add -g browser-sync`

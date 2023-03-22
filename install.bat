@@ -7,18 +7,14 @@ if not exist package.json (
 
 where /q yarn
 if not errorlevel 1 (
-  yarn help ci >nul 2>&1
-  if errorlevel 1 (
-    yarn install
-  ) else (
-    yarn ci
-  )
+  yarn help install >nul 2>&1
+  yarn install
 ) else (
   where /q npm
   if errorlevel 1 (
     echo Neither yarn nor npm is installed.
     exit /b 1
   ) else (
-    npm ci
+    npm install
   )
 )

@@ -4,6 +4,9 @@
   "repository": "git@github.com:DigitalButlersOrganization/DB-fellowesbrands.git",
   "author": "Victor Kasap <kasap.victor@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "serve": "browser-sync start --server --files '*.html, ./**/*'",
     "pretty": "npx prettier --write \"./{css,js}/**/*.{css,js}\" \"*.html\"",
