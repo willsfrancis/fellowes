@@ -3,19 +3,19 @@
 > Node >= 16.0.0
 
 ## #1 Install
-  Make `make install` <br/> 
-  Npm `npm install` <br/>
-  Yarn `yarn install`
+  make `make install` <br/> 
+  npm `npm install` <br/>
+  yarn `yarn install`
 
 ## #2 Start
-  Make `make serve` <br/>
-  Npm `npm serve` <br/>
-  Yarn `yarn serve`
+  make `make serve` <br/>
+  npm `npm serve` <br/>
+  yarn `yarn serve`
 
 ## #3 Format (prettier + autoprefixer) 
-Make `make format` <br/>
-Npm `make format` <br/>
-Yarn `yarn format`
+make `make format` <br/>
+npm `make format` <br/>
+yarn `yarn format`
 
 ### Troubles
 > BrowserSync
