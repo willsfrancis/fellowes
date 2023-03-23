@@ -1,19 +1,24 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@css/*": [
-                "src/css/*"
-            ],
-            "@js/*": [
-                "src/js/*"
-            ],
-            "@/*": [
-                "src/*"
-            ],
-            "@build/*": [
-                "src/build/*"
-            ]
-        }
-    }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@css/*": [
+        "src/css/*"
+      ],
+      "@js/*": [
+        "src/js/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@build/*": [
+        "src/build/*"
+      ]
+    },
+    "extensions": [
+      ".js",
+      ".json",
+      ".css"
+    ]
+  }
 }
