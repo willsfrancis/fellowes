@@ -11,10 +11,17 @@ body {
   line-height: 1.5em;
 }
 
-ul, p {
+ul, p, h1, h2, figure, img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.content-wrapper {
+  max-width: 50.1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 /******* @media 1440 *******/
