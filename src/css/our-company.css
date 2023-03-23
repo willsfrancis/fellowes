@@ -1,0 +1,102 @@
+/******* hero start *******/
+
+.our-company__hero {
+  min-height: 100vh;
+  background: linear-gradient(51.52deg, #000000ed -0%, rgba(0, 0, 0, 0.5) 120%), url(/images/our-company-hero.webp) no-repeat center;
+  background-size: cover;
+}
+
+.our-company__container {
+  padding: 8.25rem 5rem 2rem;
+}
+
+.our-company__hero-heading {
+  font-weight: 600;
+  font-size: 8em;
+  color: var(--text-white);
+  margin-bottom: 2.5rem;
+}
+
+.our-company__hero-heading-span {
+  white-space: nowrap;
+  padding-left: 4.5rem;
+}
+
+.our-company__hero-paragraph {
+  padding-left: 4.5rem;
+  max-width: 33rem;
+  line-height: 1.2em;
+  color: var(--text-white);
+}
+
+/******* hero end *******/
+
+
+/******* @media 1280px  start *******/
+
+@media (max-width: 1279px) {
+  /******* hero start *******/
+  .our-company__container {
+    padding: 8.25rem 3rem 2rem;
+  }
+
+  .our-company__hero-heading {
+    font-size: 5.25em;
+  }
+
+  .our-company__hero-heading-span {
+    padding-left: 2.5rem;
+  }
+
+  .our-company__hero-paragraph {
+    padding-left: 2.5rem;
+    max-width: 33rem;
+  }
+  /******* hero end *******/
+}
+
+/******* @media 1280px  end *******/
+
+/******* @media 767px  start *******/
+
+@media (max-width: 767px) {
+  /******* hero start *******/
+  .our-company__hero {
+    background: linear-gradient(11.79deg, #000000 0%, rgba(0, 0, 0, 0.4) 80%), url(/images/our-company-hero.webp) no-repeat center;
+    background-size: cover;
+  }
+  .our-company__container {
+    padding: 5rem 2rem 7.5rem;
+    justify-content: flex-end !important;
+  }
+
+  .our-company__hero-heading {
+    font-size: 3.5em;
+    margin-bottom: 1.75rem;
+  }
+
+  .our-company__hero-heading-span {
+    padding-left: 0;
+  }
+
+  .our-company__hero-paragraph {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  /******* hero end *******/
+}
+
+/******* @media 767px  end *******/
+
+/******* @media 479px  start *******/
+
+@media (max-width: 479px) {
+  /******* hero start *******/
+  .our-company__hero-heading {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  /******* hero end *******/
+}
+
+/******* @media 479px  end *******/
