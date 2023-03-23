@@ -11,10 +11,25 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx eslint --fix \"src/**\"",
+    "pretty": "npx prettier --write src",
+    "pre-commit": "npx eslint --fix \"src/**\" && npx prettier --write src",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "error": "^10.4.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-boundaries": "^3.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.5",

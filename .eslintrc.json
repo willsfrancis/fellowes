@@ -1,0 +1,109 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "settings": {},
+  "ignorePatterns": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.svg",
+    "**/*.md",
+    "**/*.json",
+    "**/*.html"
+  ],
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "import"
+  ],
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used"
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 140,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignorePattern": "d=\"([\\s\\S]*?)\""
+        // svg d=...
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "import/no-anonymous-default-export": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@build/**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@js/**",
+            "group": "sibling",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,7 +1,7 @@
-import * as mdb from 'mdb-ui-kit';
+// import * as mdb from 'mdb-ui-kit';
 
-/******* Header *******/
+/** ***** Header *******/
 
-/******* Navigation *******/
+/** ***** Navigation *******/
 
-/******* Footer *******/
+/** ***** Footer *******/

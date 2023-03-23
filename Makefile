@@ -15,8 +15,11 @@ endif
 autoprefixer: ## Autoprefixer: Process the CSS file and add vendor prefixes for cross-browser support.
 	find ./css -type f -iname "*.css" -exec ./node_modules/.bin/postcss -r {} \;
 
+lint: ## Check & Fix code ESLint
+	npx eslint --fix "src/**"
+
 pretty: ## Formats code in assets/css, assets/js, and HTML files using Prettier
-	npx prettier --write "./{css,js}/**/*.{css,js}" "*.html"
+	npx prettier --write "src/{css,js}/**/*.{css,js}" "src/*.html"
 
 format: pretty autoprefixer ## Prettier -> Autoprefixer
 
@@ -28,12 +31,10 @@ else
 	npx vite --host 0.0.0.0 --port $(PORT)
 endif
 
-# // TODO add ESLint
-
-build-prod: pretty ## Build PROD project
+build-prod: pretty lint ## Build PROD project
 	vite build
 
-build-dev: pretty ## Build DEV project
+build-dev: pretty lint ## Build DEV project
 	npx vite build --mode development
 
 preview: ## Preview project
