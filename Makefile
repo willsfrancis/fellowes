@@ -12,14 +12,6 @@ else
 	./install.sh
 endif
 
-serve: ## Start the server with an optional port (e.g., make serve PORT=4040)
-	@echo "Starting server on port $(PORT)"
-ifeq ($(PORT),)
-	browser-sync start --server --files="**/*"
-else
-	browser-sync start --server --files="**/*" --port $(PORT)
-endif
-
 autoprefixer: ## Autoprefixer: Process the CSS file and add vendor prefixes for cross-browser support.
 	find ./css -type f -iname "*.css" -exec ./node_modules/.bin/postcss -r {} \;
 
@@ -27,3 +19,22 @@ pretty: ## Formats code in assets/css, assets/js, and HTML files using Prettier
 	npx prettier --write "./{css,js}/**/*.{css,js}" "*.html"
 
 format: pretty autoprefixer ## Prettier -> Autoprefixer
+
+start: ## Start the server with an optional port (e.g., make serve PORT=4040)
+	@echo "Starting server on port $(PORT)"
+ifeq ($(PORT),)
+	npx vite
+else
+	npx vite --host 0.0.0.0 --port $(PORT)
+endif
+
+# // TODO add ESLint
+
+build-prod: pretty ## Build PROD project
+	vite build
+
+build-dev: pretty ## Build DEV project
+	npx vite build --mode development
+
+preview: ## Preview project
+	npx vite preview
