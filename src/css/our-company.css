@@ -2,7 +2,7 @@
 
 .our-company__hero {
   min-height: 100vh;
-  background: linear-gradient(51.52deg, #000000ed -0%, rgba(0, 0, 0, 0.6) 120%), url(/images/our-company-hero.webp) no-repeat center;
+  background: linear-gradient(51.52deg, #000000ed -0%, rgba(0, 0, 0, 0.6) 120%), url('../images/our-company-hero.webp') no-repeat center;
   background-size: cover;
 }
 
@@ -48,6 +48,9 @@
   border-left-color: var(--black);
   color: var(--gray-400);
 }
+.our-company-tab-content {
+  width: 100%;
+}
 /******* tabs end *******/
 
 /******* family end *******/
@@ -66,8 +69,8 @@
 
 .our-company__family-container {
   padding: 7.5rem 0;
-  border-left: 1px solid #f4f4f4;
-  border-right: 1px solid #f4f4f4;
+  /*border-left: 1px solid #f4f4f4;*/
+  /*border-right: 1px solid #f4f4f4;*/
 }
 
 .our-company__family--heading--xl {
@@ -289,7 +292,7 @@
   font-size: 9.375rem;
   font-weight: 800;
   line-height: 1.4;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.85rem;
   color: var(--text-white);
   -webkit-text-stroke: 1px var(--text-border-color);
   margin-bottom: -1.2rem;
@@ -778,7 +781,7 @@
 @media screen and (max-width: 768px) {
   /******* hero start *******/
   .our-company__hero {
-    background: linear-gradient(11.79deg, #000000 0%, rgba(0, 0, 0, 0.4) 80%), url(/images/our-company-hero.webp) no-repeat center;
+    background: linear-gradient(11.79deg, #000000 0%, rgba(0, 0, 0, 0.4) 80%), url('../images/our-company-hero.webp') no-repeat center;
     background-size: cover;
   }
   .our-company__hero-container {
