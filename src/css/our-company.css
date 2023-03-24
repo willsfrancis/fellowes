@@ -95,15 +95,26 @@
 .our-company__figure--left {
   position: relative;
   left: -2.5rem;
+  max-width: 37.5rem;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
 }
 .our-company__figure--center {
   position: relative;
   left: 5.5rem;
+  max-width: 16.875rem;
+  max-height: 16.875rem;
+  width: 100%;
+  object-fit: cover;
 }
 .our-company__figure--right {
   position: relative;
   right: -5.5rem;
   top: -20rem;
+  max-height: 15.625rem;
+  width: 27.625rem;
+  object-fit: cover;
 }
 
 .our-company__family-heading--xxl {
@@ -519,9 +530,10 @@
   .our-company__figure--right {
     position: static;
   }
-  .our-company__family-figures-wrapper figure img {
+  .our-company__family-figures-wrapper img {
+    max-height: none;
     height: 17.25rem;
-    width: 17.25rem;
+    max-width: 33%;
     object-fit: cover;
   }
   /******* family end *******/
@@ -940,10 +952,9 @@
     font-size: 3.25rem;
   }
 
-  .our-company__family-figures-wrapper figure img {
+  .our-company__family-figures-wrapper img {
     height: 6.875rem;
     width: 6.875rem;
-    object-fit: cover;
   }
 
   /******* family end *******/
