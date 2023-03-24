@@ -45,7 +45,9 @@ export default defineConfig(() => {
             if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
               extType = 'img';
             } else if (/woff|woff2/.test(extType)) {
-              extType = 'css';
+              extType = "fonts";
+            } else if(/\.(css)$/i.test(extType)) {
+              extType = "css";
             }
             return `assets/${extType}/[name][extname]`;
           },

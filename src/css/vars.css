@@ -1,0 +1,23 @@
+:root {
+  --black: #000000;
+
+  --gray-50: #f8f8f8;
+  --gray-100: #f0f0f0;
+  --gray-200: #e4e4e4;
+  --gray-300: #d1d1d1;
+  --gray-400: #b2b2b2;
+  --gray-500: #9a9a9a;
+  --gray-600: #818181;
+  --gray-700: #6a6a6a;
+  --gray-800: #5a5a5a;
+  --gray-900: #4e4e4e;
+
+  --text-white: #ffffff;
+  --outer-space: #2e343d;
+  --eerie-black: #16191e;
+  --approx-grey: #888888;
+
+  --text-border-color: #cccccc;
+  --list-item-decoration-color: #d9d9d9;
+  --pre-footer-color: #f6f5f3;
+}

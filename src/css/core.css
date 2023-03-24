@@ -1,20 +1,66 @@
 @import 'normalize.css';
 @import 'mdb-ui-kit/css/mdb.min.css';
+@import 'vars.css';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;700;800&family=Tajawal&display=swap');
 
-/******* body *******/
+/******* common *******/
 
 body {
   font-family: 'Raleway';
-  font-size: 0.875em;
+  font-size: 0.938rem;
   line-height: 1.5em;
+  overflow-x: hidden;
 }
 
-ul {
+ul,
+p,
+h1,
+h2,
+figure,
+img {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/******* Header *******/
 
-/******* Navigation *******/
+.nowrap {
+  white-space: nowrap;
+}
 
-/******* Footer *******/
+section {
+  position: relative;
+  z-index: 10;
+}
+
+/******* @media 1440 *******/
+
+@media (min-width: 1440px) {
+  .container-xxl {
+    max-width: 85rem;
+    padding: 0;
+  }
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  padding: 0;
+}
+
+/******* page-decoration start *******/
+.page-decoration {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray-100);
+}
+/******* page-decoration end *******/

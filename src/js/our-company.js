@@ -1,7 +1,35 @@
-// import * as mdb from 'mdb-ui-kit';
+import 'mdb-ui-kit';
 
-/** ***** Header *******/
+/** ***** Tabs ***** **/
+const initTabs = () => {
+  const tabs = document.getElementById('our-company-tabs');
+  const navLinks = tabs.querySelectorAll('.nav-link');
 
-/** ***** Navigation *******/
+  function disableTabs() {
+    navLinks.forEach((link) => {
+      link.removeAttribute('data-mdb-toggle');
+    });
+  }
 
-/** ***** Footer *******/
+  function enableTabs() {
+    navLinks.forEach((link) => {
+      link.setAttribute('data-mdb-toggle', 'tab');
+    });
+  }
+
+  window.addEventListener('load', () => {
+    if (window.innerWidth < 480) {
+      disableTabs();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 480) {
+      disableTabs();
+    } else {
+      enableTabs();
+    }
+  });
+};
+
+initTabs();
