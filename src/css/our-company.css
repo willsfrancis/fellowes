@@ -37,6 +37,15 @@
   position: relative;
 }
 
+.our-company__family-content-wrapper {
+  max-width: 50.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  margin: 0 auto;
+}
+
 .our-company__family-container {
   padding: 7.5rem 0;
   border-left: 1px solid #F4F4F4;
@@ -92,6 +101,7 @@
 .our-company__family-paragraph--lg {
   font-size: .813rem;
   max-width: 40rem;
+  margin: 0 auto;
 }
 
 .our-company__family-list {
@@ -148,6 +158,12 @@
     padding: 7rem 0 3.125rem;
   }
 
+  .our-company__innovation-content-wrapper {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .our-company__innovation-header {
     position: relative;
     margin-bottom: 14rem;
@@ -166,7 +182,7 @@
 
   .our-company__innovation-figure {
     position: absolute;
-    right: -11.5rem;
+    right: -1.5rem;
     bottom: -4rem;
   }
 
@@ -216,6 +232,7 @@
   .our-company__innovation-bottom-figure-wrapper {
     position: relative;
     column-gap: .875rem;
+    max-height: 24rem;
   }
 
   .our-company__innovation-bottom-figure--left {
@@ -229,6 +246,97 @@
     right: -2rem;
   }
 /******* innovation end *******/
+
+/******* quality start *******/
+
+  .our-company__quality-container {
+    padding: 3.125rem 0;
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .our-company__quality-heading--xxl {
+    font-size: 9.375rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: var(--text-white);
+    -webkit-text-stroke: 1px var(--text-border-color);
+  }
+
+  .our-company__quality-heading--xl {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1em;
+    letter-spacing: 0.01em;
+    color: var(--eerie-black);
+    margin-bottom: 2.5rem;
+    max-width: 36.438rem;
+  }
+
+  .our-company__quality-paragraph {
+    font-size: 1.063rem;
+    color: var(--outer-space);
+    max-width: 38.563rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .our-company__quality-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-size: .938rem;
+    color: var(--outer-space);
+    max-width: 37rem;
+    margin-bottom: 7.5rem;
+  }
+  .our-company__quality-item {
+    margin-left: 3.25rem;
+    position: relative;
+  }
+  .our-company__quality-item::before {
+    content: '';
+    position: absolute;
+    left: -2.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: var(--list-item-decoration-color);
+  }
+
+  .our-company__quality-figures-wrapper {
+    position: relative;
+    display: flex;
+    column-gap: 2.375rem;
+    max-height: 18.75rem;
+  }
+
+  .our-company__quality-figure--right {
+    position: absolute;
+    right: 0;
+    top: -27.8rem;
+    width: 20rem;
+    height: 23.438rem;
+    object-fit: cover;
+  }
+
+  .our-company__quality-figure--left {
+    width: 28%;
+    max-width: 18.438rem;
+    object-fit: cover;
+  }
+
+  .our-company__quality-figure--center {
+    width: 68%;
+    max-width: 39.188rem;
+    object-fit: cover;
+    margin-left: auto;
+  }
+
+/******* quality end *******/
 
 /******* @media 1439px  start *******/
 
@@ -268,6 +376,10 @@
     margin-bottom: 7vw;
   }
 
+  .our-company__innovation-bottom-figure-wrapper {
+    max-height: 26vw;
+  }
+
   .our-company__innovation-top-figure-wrapper figure,
   .our-company__innovation-bottom-figure-wrapper figure {
     min-width: 30%;
@@ -296,6 +408,36 @@
   }
 
   /******* innovation end *******/
+
+  /******* quality start *******/
+
+  .our-company__quality-container {
+    padding: 3.125rem 1.5rem;
+  }
+
+  .our-company__quality-figure--right {
+    display: none;
+  }
+
+  .our-company__quality-heading--xxl {
+    font-size: 15vw;
+  }
+
+  .our-company__quality-figures-wrapper {
+    column-gap: .813rem;
+    max-height: 25vw;
+  }
+
+  .our-company__quality-list {
+    margin-bottom: 2rem;
+  }
+
+  .our-company__quality-item {
+    margin-left: 2.25rem;
+  }
+
+
+  /******* quality end *******/
 }
 
 /******* @media 1439px  end *******/
@@ -399,7 +541,7 @@
     margin-bottom: -1rem;
   }
 
-  .our-company .content-wrapper.mb-10 {
+  .our-company .our-company__family-content-wrapper.mb-10 {
     margin-bottom: 6.25rem !important;
   }
 
@@ -464,6 +606,28 @@
     font-size: 4vw;
     max-width: 30vw;
   }
+
+  .our-company__innovation-bottom-figure-wrapper {
+    max-height: 26vw;
+  }
+
+  /******* quality start *******/
+
+  .our-company__quality-figures-wrapper {
+    column-gap: .813rem;
+    max-height: 28vw;
+  }
+
+  .our-company__quality-heading--xl {
+    margin-bottom: 1.5rem;
+  }
+
+  .our-company__quality-paragraph {
+    font-size: .938rem;
+    margin-bottom: 3.375rem;
+  }
+
+  /******* quality end *******/
 }
 
 /******* @media 768px  end *******/
@@ -528,6 +692,17 @@
     max-width: 24vw;
   }
   /******* innovation end *******/
+
+   /******* quality start *******/
+
+  .our-company__quality-heading--xl {
+    font-size: 2rem;
+  }
+
+  .our-company__quality-heading--xxl {
+    font-size: 3.25rem;
+  }
+  /******* quality end *******/
 }
 
 /******* @media 480px  end *******/
