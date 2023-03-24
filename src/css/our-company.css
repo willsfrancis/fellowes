@@ -52,6 +52,10 @@
   margin-bottom: 2.5rem;
 }
 
+.our-company__family-figures-wrapper {
+  padding-bottom: 5rem;
+}
+
 .our-company__family--heading--xl .nowrap {
   white-space: nowrap;
 }
@@ -235,7 +239,7 @@
   }
   .our-company__family-figures-wrapper {
     gap: 1rem;
-    margin-bottom: 3.125rem;
+    padding-bottom: 3.125rem;
     justify-content: center;
   }
   .our-company__figure--left,
@@ -392,7 +396,7 @@
 
   .our-company__family-heading--xxl {
     font-size: 5rem;
-
+    margin-bottom: -1rem;
   }
 
   .our-company .content-wrapper.mb-10 {

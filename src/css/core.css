@@ -9,6 +9,7 @@ body {
   font-family: 'Raleway';
   font-size: 0.938rem;
   line-height: 1.5em;
+  overflow-x: hidden;
 }
 
 ul, p, h1, h2, figure, img {
