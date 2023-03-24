@@ -10,7 +10,10 @@
     "**/*.svg",
     "**/*.md",
     "**/*.json",
-    "**/*.html"
+    "**/*.html",
+    "**/*.jpg",
+    "**/*.png",
+    "**/*.webp"
   ],
   "extends": [
     "standard",
