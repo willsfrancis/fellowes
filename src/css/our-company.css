@@ -259,10 +259,11 @@
   .our-company__quality-heading--xxl {
     font-size: 9.375rem;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.4;
     letter-spacing: 0.1em;
     color: var(--text-white);
     -webkit-text-stroke: 1px var(--text-border-color);
+    margin-bottom: -1.2rem;
   }
 
   .our-company__quality-heading--xl {
@@ -280,6 +281,7 @@
     color: var(--outer-space);
     max-width: 38.563rem;
     margin-bottom: 1.75rem;
+    line-height: 1.6em;
   }
 
   .our-company__quality-list {
@@ -317,7 +319,7 @@
   .our-company__quality-figure--right {
     position: absolute;
     right: 0;
-    top: -27.8rem;
+    top: -28.4rem;
     width: 20rem;
     height: 23.438rem;
     object-fit: cover;
@@ -337,6 +339,104 @@
   }
 
 /******* quality end *******/
+
+/******* care start *******/
+
+.our-company__care-container {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.25rem 0 18.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-company__care-heading--xxl {
+  font-size: 9.375rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  color: var(--text-white);
+  -webkit-text-stroke: 1px var(--text-border-color);
+  margin-bottom: -1.8rem;
+}
+
+.our-company__care-heading--xl {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1em;
+  letter-spacing: 0.01em;
+  color: var(--eerie-black);
+  margin-bottom: 2.25rem;
+}
+
+.our-company__care-paragraph {
+  font-size: .813rem;
+  color: var(--outer-space);
+  max-width: 40rem;
+  margin-bottom: 5.25rem;
+}
+
+.our-company__care-top-figures-wrapper,
+.our-company__care-center-figures-wrapper,
+.our-company__care-bottom-figures-wrapper {
+  display: flex;
+  width: 100%;
+  column-gap: 2.5rem;
+  max-height: 18.75rem;
+}
+
+.our-company__care-top-figures-wrapper,
+.our-company__care-center-figures-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.our-company__care-description-wrapper {
+  min-width: 18.125rem;
+  width: 100%;
+  padding: 3.438rem 0;
+}
+
+.our-company__care-description-heading {
+  max-width: 17.5rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  color: var(--eerie-black);
+  margin-bottom: 1.375rem;
+}
+
+.our-company__care-description-paragraph {
+  font-size: .813rem;
+  color: var( --outer-space);
+}
+
+.our-company__care-figure--xl {
+  width: 100%;
+  max-width: 18.438rem;
+  object-fit: cover;
+}
+
+.our-company__care-figure--xxl {
+  width: 100%;
+  max-width: 33.4rem;
+  object-fit: cover;
+  position: relative;
+}
+
+.our-company__care-center-figures-wrapper {
+  position: relative;
+  left: -15.3rem;
+}
+
+.our-company__care-bottom-figures-wrapper .our-company__care-figure--xxl{
+  max-width: 39.25rem;
+  width: 100%;
+}
+
+/******* care end *******/
 
 /******* @media 1439px  start *******/
 
@@ -436,8 +536,32 @@
     margin-left: 2.25rem;
   }
 
-
   /******* quality end *******/
+
+  /******* care start *******/
+
+  .our-company__care-container {
+    padding: 3.25rem 1.5rem 18.25rem;
+  }
+
+  .our-company__care-figure--xl,
+  .our-company__care-figure--xxl {
+    max-width: 17.438rem;
+  }
+
+  .our-company__care-description-wrapper {
+    min-width: 17.125rem;
+  }
+
+  .our-company__care-center-figures-wrapper {
+    position: static;
+  }
+
+  .our-company__care-bottom-figures-wrapper .our-company__care-figure--xxl {
+    max-width: 36.75rem;
+  }
+
+  /******* care end *******/
 }
 
 /******* @media 1439px  end *******/
@@ -501,9 +625,70 @@
 
 /******* @media 1280px  end *******/
 
+
+/******* @media 992px  end *******/
+
+@media screen and (max-width: 992px) {
+  /******* care start *******/
+
+  .our-company__care-top-figures-wrapper,
+  .our-company__care-center-figures-wrapper,
+  .our-company__care-bottom-figures-wrapper {
+    flex-wrap: wrap;
+    max-height: none;
+    column-gap: 4%;
+  }
+
+  .our-company__care-description-wrapper {
+    padding: 0;
+    order: 0;
+    margin-bottom: 2rem;
+  }
+
+  .our-company__care-figure--xl,
+  .our-company__care-figure--xxl {
+    max-width: none;
+    width: 100%;
+    max-height: 18.75rem;
+  }
+
+  .our-company__care-top-figures-wrapper .our-company__care-figure--xl,
+  .our-company__care-center-figures-wrapper .our-company__care-figure--xl {
+    max-width: 36%;
+    order: 1;
+  }
+
+  .our-company__care-center-figures-wrapper .our-company__care-figure--xxl,
+  .our-company__care-top-figures-wrapper .our-company__care-figure--xxl {
+    max-width: 60%;
+    order: 2;
+  }
+
+  .our-company__care-bottom-figures-wrapper .our-company__care-figure--xxl {
+    max-width: 100%;
+    order: 2
+  }
+
+  .our-company__care-paragraph {
+    margin-bottom: 2.5rem;
+    font-size: .938rem;
+  }
+
+  .our-company__care-description-heading {
+    max-width: none;
+  }
+
+  .our-company__care-container {
+    padding-bottom: 5rem;
+  }
+
+  /******* care end *******/
+}
+/******* @media 992px  end *******/
+
 /******* @media 768px  start *******/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /******* hero start *******/
   .our-company__hero {
     background: linear-gradient(11.79deg, #000000 0%, rgba(0, 0, 0, 0.4) 80%), url(/images/our-company-hero.webp) no-repeat center;
@@ -628,6 +813,22 @@
   }
 
   /******* quality end *******/
+
+  /******* care start *******/
+
+  .our-company__care-heading--xxl {
+    font-size: 15vw;
+  }
+
+  .our-company__care-heading--xl {
+    margin-bottom: 1.5rem;
+  }
+
+  .our-company__care-figure--xl,
+  .our-company__care-figure--xxl {
+    max-height: 28vw;
+  }
+  /******* care start *******/
 }
 
 /******* @media 768px  end *******/
@@ -703,6 +904,56 @@
     font-size: 3.25rem;
   }
   /******* quality end *******/
+
+  /******* care start *******/
+
+  .our-company__care-heading--xxl {
+    font-size: 3.25rem;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .our-company__care-heading--xxl::before {
+    content: 'care';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    padding: .25rem .375rem;
+    font-weight: 700;
+    font-size: .625rem;
+    line-height: 1em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-white);
+    background: var(--eerie-black);
+    border-radius: .5rem;
+  }
+
+  .our-company__care-heading--xl {
+    font-size: 2rem;
+    max-width: 21.563rem;
+    text-align: center;
+  }
+
+  .our-company__care-description-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .our-company__care-description-paragraph {
+    font-size: .938rem;
+  }
+
+  .our-company__care-top-figures-wrapper, .our-company__care-center-figures-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  .our-company__care-container {
+    padding-bottom: 3.125rem;
+  }
+
+  /******* care end *******/
 }
 
 /******* @media 480px  end *******/
